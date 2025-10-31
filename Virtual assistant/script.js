@@ -14,17 +14,17 @@ function wishMe(){
     let day=new Date()
     let hours=day.getHours()
     if(hours>=0 && hours<12){
-        speak("Good Morning Saloni Baby")
+        speak("Good Morning Sir")
     }
     else if(hours>=12 && hours<16){
-        speak("Good Afternoon Saloni Baby")
+        speak("Good Afternoon Sir")
     }else{
-         speak("Good Evening Saloni Baby")
+         speak("Good Evening Sir")
     }
 }
-//window.addEventListener('load',()=>{
-  //  wishMe()
-//})
+window.addEventListener('load',()=>{
+    wishMe()
+})
 let speechRecognition= window.SpeechRecognition || window.webkitSpeechRecognition
 let recognition =new speechRecognition()
 recognition.onresult=(event)=>{
