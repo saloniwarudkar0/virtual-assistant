@@ -1,5 +1,1 @@
-staticSites:
-  - name: my-html-site
-    branch: main
-    publishPath: "/"
-    buildCommand: ""
+
